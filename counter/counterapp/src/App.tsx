@@ -1,18 +1,19 @@
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
 import './App.css'
 import Button from './components/button/button'
 
 function App() {
-    return(
-    <div className="counter-div">
-        <h1>1</h1>
-        <div className="buttons">
-            <Button sign="-"/>
-            <Button sign="+"/>
-        </div>
-        
-    </div>
-    )
+  const [count, setCount] = useState(0)
 
+  return (
+    <>
+      <h1>{count}</h1>
+      <Button sign="-"/>
+      <Button sign="+"/>
+    </>
+  )
 }
 
 export default App
