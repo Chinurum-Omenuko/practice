@@ -1,0 +1,23 @@
+@import "global.scss";
+
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    padding: 0;
+    margin: 0;
+}
+
+
+nav{
+    position: fixed;
+    min-width: 100vw;
+    background-color: red;
+    max-height: 30vh;
+}
+
+.nav-items{
+    @include flex-row;
+    
+}
