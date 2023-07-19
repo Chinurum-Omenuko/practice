@@ -11,10 +11,11 @@ html,body{
 
 
 nav{
+    padding: 30px 0;
     position: fixed;
     min-width: 100vw;
     background-color: red;
-    max-height: 30vh;
+    max-height: 100vh;
 }
 
 .nav-items{
@@ -22,9 +23,30 @@ nav{
     
 }
 
+.navlist, .burger{
+    @include hide
+}
+
+
+
 @media only screen and (max-width: 400px){
     .nav-menu{
-        display: none;
+        @include hide
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .navlist{
+        @include flex-col;
+        display: block;
+
+        .list-items{
+            @include flex-col;
+            height: 90vh;
+            
+        }
     }
     
 }
