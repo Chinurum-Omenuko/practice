@@ -1,6 +1,6 @@
 import './App.css'
 
-function App() {
+function Navbar() {
   const [count, setCount] = useState(0)
 
   return (
@@ -10,4 +10,4 @@ function App() {
   )
 }
 
-export default App
+export default Navbar
