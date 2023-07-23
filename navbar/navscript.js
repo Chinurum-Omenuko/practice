@@ -1,29 +1,24 @@
 var hamburger = document.getElementById("burger")
-var navmenu = document.querySelector(".nav-menu")
+var menu = document.querySelector(".nav-menu")
 
-const options = {
+const display = {
     show : 'display: block',
     hide : 'display: none'
 }
 
 
-console.log("queries selected")
-
-
 
 function change(){
-    let style = navmenu.getAttribute('style')
-    console.log(style)
-    
-    if(style == options.hide || null){
-        navmenu.setAttribute('style', `${options.show}`)
-        console.log(`style changed to: ${style}`)
-    }
-    else{
-        navmenu.setAttribute('style', `${options.hide}`)
-        console.log(`style changed to: ${style}`)
-    }
-    
+    let menuStyle = menu.getAttribute('style')
+    let menuState = menuStyle == display.hide || !menu.hasAttribute('style') ? `${display.show}`:`${display.hide}`
+    menu.setAttribute('style', menuState )
+
+    // if(menuStyle == display.hide || !menu.hasAttribute('style')){
+    //     menu.setAttribute('style', `${display.show}`)
+    // }
+    // else{
+    //     menu.setAttribute('style', `${display.hide}`)
+    // }
 
     
 }
