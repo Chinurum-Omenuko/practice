@@ -9,7 +9,6 @@ html,body{
     margin: 0;
 }
 
-
 nav{
     padding: 30px 0;
     position: fixed;
@@ -20,33 +19,34 @@ nav{
 
 .nav-items{
     @include flex-row;
-    
 }
 
-.navlist, .burger{
-    @include hide
+#burger{
+    @include hide;
 }
 
 
 
 @media only screen and (max-width: 400px){
     .nav-menu{
-        @include hide
-    }
+        color: black;
+        @include hide;
+        position: fixed;
+        z-index: -1000;
+        width: 100vw;
+        height: 90vh;
+        top: 85px;
+        background-color: red;
 
-    .burger{
-        display: block;
-    }
-
-    .navlist{
-        @include flex-col;
-        display: block;
-
-        .list-items{
+        .menu-items{
+            min-height: 100%;
             @include flex-col;
-            height: 90vh;
-            
         }
+    }
+
+    #burger{
+        display: block;
+        width: 30px;
     }
     
 }
