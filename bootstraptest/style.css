@@ -1,0 +1,8 @@
+*{
+    box-sizing: border-box;
+}
+
+nav{
+    color: black;
+    background-color: blue;
+}
