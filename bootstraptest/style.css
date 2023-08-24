@@ -2,7 +2,86 @@
     box-sizing: border-box;
 }
 
-nav{
-    color: black;
-    background-color: blue;
+:root{
+    --bg-colour: #000000;
+    --text-colour: #ffffff;
+    --my-primary: #e70d0d;
+    font-size: 1.2rem;
 }
+
+
+body{
+    margin-top: 20px;
+    background-color: var(--bg-colour);
+}
+
+nav{
+    color: white;
+    position: fixed;
+}
+
+h1,h2{
+    color: var(--my-primary);
+}
+
+
+p,li a, label {
+    color: var(--text-colour)!important;
+}
+
+
+.bg-dark{
+    background-color: var(--bg-colour)!important;
+}
+
+.navbar-toggler {
+    background-color: #000000; /* Set your desired background color */
+    /* border-color: #ff5733; Set border color to match the background color */
+}
+
+.navbar-toggler-icon {
+    background-image: url("./burger-menu-right-svgrepo-com\ \(1\).svg");
+    min-width: .2rem;
+}
+
+.btn{
+    background-color: var(--my-primary);
+    border-color: var(--my-primary);
+}
+
+main, #gallery, #contact-form{
+    padding-top: 50px;
+    background-color: var(--bg-colour);
+    min-height: 100vh;
+}
+
+#about{
+    min-height: 80vh;
+}
+
+
+.row{
+    min-height: 100vh;
+}
+
+.nav-link:hover{
+    background-color: var(--my-primary);
+
+}
+
+
+
+@media only screen and (max-width: 991px) {
+    body {
+      background-color: var(--bg-colour);
+      margin-top: 5px;
+    }
+
+    /* .right-side{
+        display: none;
+    } */
+
+    .left-side{
+        min-height: 50vh;
+    }
+  }

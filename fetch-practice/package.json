@@ -1,0 +1,19 @@
+{
+  "name": "fetch-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "callback.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p . -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^5.1.6"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.1"
+  }
+}
